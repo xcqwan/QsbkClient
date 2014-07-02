@@ -10,6 +10,7 @@
 		E095CBF31963E597006ED990 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E095CBF21963E597006ED990 /* AppDelegate.swift */; };
 		E095CBF51963E598006ED990 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E095CBF41963E598006ED990 /* Images.xcassets */; };
 		E095CC011963E598006ED990 /* QsbkClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E095CC001963E598006ED990 /* QsbkClientTests.swift */; };
+		E095CC181963E79F006ED990 /* LDMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E095CC141963E79F006ED990 /* LDMainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +31,7 @@
 		E095CBFA1963E598006ED990 /* QsbkClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QsbkClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E095CBFF1963E598006ED990 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E095CC001963E598006ED990 /* QsbkClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QsbkClientTests.swift; sourceTree = "<group>"; };
+		E095CC141963E79F006ED990 /* LDMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LDMainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,10 @@
 		E095CBEF1963E597006ED990 /* QsbkClient */ = {
 			isa = PBXGroup;
 			children = (
+				E095CC131963E79F006ED990 /* ViewController */,
+				E095CC151963E79F006ED990 /* image */,
+				E095CC161963E79F006ED990 /* Utility */,
+				E095CC171963E79F006ED990 /* View */,
 				E095CBF21963E597006ED990 /* AppDelegate.swift */,
 				E095CBF41963E598006ED990 /* Images.xcassets */,
 				E095CBF01963E597006ED990 /* Supporting Files */,
@@ -101,6 +107,35 @@
 				E095CBFF1963E598006ED990 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E095CC131963E79F006ED990 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E095CC141963E79F006ED990 /* LDMainViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		E095CC151963E79F006ED990 /* image */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = image;
+			sourceTree = "<group>";
+		};
+		E095CC161963E79F006ED990 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		E095CC171963E79F006ED990 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E095CBF31963E597006ED990 /* AppDelegate.swift in Sources */,
+				E095CC181963E79F006ED990 /* LDMainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,9 +341,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = QsbkClient/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -316,9 +355,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = QsbkClient/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -377,6 +419,7 @@
 				E095CC061963E598006ED990 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E095CC071963E598006ED990 /* Build configuration list for PBXNativeTarget "QsbkClientTests" */ = {
 			isa = XCConfigurationList;
@@ -385,6 +428,7 @@
 				E095CC091963E598006ED990 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
